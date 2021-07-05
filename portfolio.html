@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goit-markup-hw-02</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo header__logo logo__studio_color_black"
+          ><span class="logo__first-part">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="./index.html"
+                class="nav__link"
+                >Студия</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link nav__link--current-page"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link"
+              ><svg
+                class="contacts__icon"
+                width="16px"
+                height="12px"
+              >
+                <use href="./images/icons/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg
+                class="contacts__icon"
+                width="10px"
+                height="16px"
+              >
+                <use href="./images/icons/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio">
+        <!-- Портфолио -->
+        <div class="container">
+          <h2 class="visually-hidden">портфолио</h2>
+          <ul class="portfolio-button__list">
+            <li class="portfolio-button__item">
+              <button class="button-portfolio aiming-transform" type="button">Все</button>
+            </li>
+            <li class="portfolio-button__item">
+              <button class="button-portfolio aiming-transform" type="button">Веб-сайты</button>
+            </li>
+            <li class="portfolio-button__item">
+              <button class="button-portfolio aiming-transform" type="button">Приложения</button>
+            </li>
+            <li class="portfolio-button__item">
+              <button class="button-portfolio aiming-transform" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio-button__item">
+              <button class="button-portfolio aiming-transform" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio-card__list">
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img" src="./images/desktop_1x/tehnokryak.jpg" alt="Технокряк" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Технокряк</h3>
+                  <p class="portfolio-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                <img class="portfolio-card__img"
+                  src="./images/desktop_1x/posterNewOrlean.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="portfolio-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img" src="./images/desktop_1x/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                  </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Ресторан Seafood</h3>
+                  <p class="portfolio-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img" src="./images/desktop_1x/projektPrime.jpg" alt="Проект Prime" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                  </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Проект Prime</h3>
+                  <p class="portfolio-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img" src="./images/desktop_1x/projektBoxes.jpg" alt="Проект Boxes" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                  </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Проект Boxes</h3>
+                  <p class="portfolio-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img"
+                  src="./images/desktop_1x/inspiration.jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                  height="294"
+                  />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                  </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Inspiration has no Borders</h3>
+                  <p class="portfolio-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img"
+                  src="./images/desktop_1x/limitedEdition.jpg"
+                  alt="Издание Limited Edition"
+                  width="370"
+                  height="294"
+                  />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                  </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Издание Limited Edition</h3>
+                  <p class="portfolio-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img" src="./images/desktop_1x/lab.jpg" alt="Проект LAB" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                  </div>
+                </div>
+                <div class="portfolio-card__caption">
+                  <h3 class="portfolio-card__title">Проект LAB</h3>
+                  <p class="portfolio-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card__item">
+              <a class="portfolio-card__link" href="">
+                <div class="portfolio-card__thumb">
+                  <img class="portfolio-card__img"
+                    src="./images/desktop_1x/growingBusiness.jpg"
+                    alt="Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
+                  </div>
+                </div>
+                    <div class="portfolio-card__caption">
+                      <h3 class="portfolio-card__title">Growing Business</h3>
+                      <p class="portfolio-card__text">Приложение</p>
+                    </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer-logo-contacts">
+          <a href="#" class="logo footer__logo logo__studio_color_white"
+            ><span class="logo__first-part">Web</span>Studio</a
+          >
+          <address class="footer-address">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  class="footer__link aiming-transform"
+                  href="https://goo.gl/maps/GkJHz6BWag29Yt4w9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="footer__item">
+                <a
+                  class="footer__link aiming-transform footer__link--transparency"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  class="footer__link aiming-transform footer__link--transparency"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h3 class="footer-social__title">присоединяйтесь</h3>
+          <ul class="social-icon-list">
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="subscribe-form" action="#">
+          <b class="subscribe-form__title">Подпишитесь на рассылку</b>
+          <div class="subscribe-form__box">
+            <label for="footer-user-meil"></label>
+            <input
+              class="subscribe-form__area-input"
+              type="email"
+              name="footer-user-meil"
+              id="footer-user-meil"
+              placeholder="E-mail"
+              required
+            />
+            <button
+              class="primary-button primary-button--padding-footer aiming-transform"
+              type="submit"
+            >
+              Подписаться
+              <svg class="subscribe-form__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

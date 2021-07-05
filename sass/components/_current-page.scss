@@ -1,0 +1,15 @@
+.nav__link--current-page {
+  color: var(--aiming-color);
+    &::after {
+      display: flex;
+      content: '';
+      width: 100%;
+      border: 2px solid;
+      border-radius: 2px;
+      background: var(--body-color);
+      margin-right: 20px;
+      color: var(--aiming-color);
+      position: relative;
+      top: 28px;
+    }
+}

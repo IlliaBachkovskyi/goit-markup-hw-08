@@ -1,0 +1,5 @@
+.aiming-transform {
+  transition-property: color, fill, background-color, border, box-shadow, opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+}

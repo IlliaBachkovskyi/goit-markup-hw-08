@@ -1,0 +1,33 @@
+.about-us__title {
+  @include font (700, 36px, 1.167, 0.03em);
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+.about-us {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+  }
+  &__img {
+    display: block;
+  }
+  &__card-title {
+    @extend %ai-center_jc-center;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    @include font (700, 14px, 1.172, 0.03em);
+    text-transform: uppercase;
+    color: var(--body-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

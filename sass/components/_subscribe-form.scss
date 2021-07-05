@@ -1,0 +1,32 @@
+.subscribe-form {
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    @include font (700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--body-color);
+  }
+  &__box {
+    display: flex;
+  }
+  &__area-input {
+    width: 358px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--body-color);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &:focus {
+      border-color: var(--aiming-color);
+    }
+  }
+  &__icon {
+    fill: var(--body-color);
+    margin-left: 10px;
+  }
+}
