@@ -1,3 +1,12 @@
+.about-us {
+  display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+}
 .about-us__title {
   @include font (700, 36px, 1.167, 0.03em);
   text-align: center;

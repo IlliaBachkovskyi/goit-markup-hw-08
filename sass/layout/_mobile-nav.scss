@@ -1,0 +1,114 @@
+.button-close-mobile { 
+  @extend %ai-center_jc-center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--body-color);
+    &__icon {
+      width: 18px;
+      height: 18px;
+      transition: fill 250ms var(--cubic);
+    }
+    &:hover &__icon,
+    &:focus &__icon {
+      fill: var(--aiming-color);
+    }
+}
+
+.mobile-nav.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms var(--cubic) visibility 250ms var(--cubic);
+}
+
+.mobile-nav__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100%;
+}
+.mobile-nav {
+    position: absolute;
+    background-color: var(--body-color);
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: auto;
+    z-index: 1;
+    & .button-close-mobile {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+    &__list {
+      padding-top: 48px;
+      padding-left: 25px;
+    }
+    &__item {
+        margin-bottom: 35px;
+    }
+    &__link {
+    font-style: normal;
+    @include font (500, 40px, 1.175, 0.02em);
+    color: var(--main-text-color);
+      &:hover,
+      &:focus {
+        color: var(--aiming-color);
+    }
+  }
+}
+
+.mobile-contacts {
+  &__list {
+    padding-left: 25px;
+    margin-bottom: 64px;
+  } 
+  &__item {
+      margin-bottom: 32px;
+  }
+  &__link {
+    text-decoration: none;
+    font-style: normal;
+    @include font (500, 24px, 1.167, 0.02em);
+    color: var(--main-text-color);
+      &:hover,
+      &:focus {
+        color: var(--aiming-color);
+    } 
+  } 
+}
+
+.mobile-social {
+  &__list {  
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    
+  } 
+  &__item {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);  
+  } 
+  &__item:last-child {
+    border-right: none;
+  }
+  &__link {
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    @include font (500, 18px, 1.222, 0.02em);
+    color: var(--aiming-color);
+  }
+}
+
+.mobile-nav__link--current-page {
+  color: var(--aiming-color);
+}

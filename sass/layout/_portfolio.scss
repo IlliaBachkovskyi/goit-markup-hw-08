@@ -1,32 +1,60 @@
+.portfolio {
+  margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 94px;
+    }
+}
 .portfolio-button {
   &__list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    margin-right: -8px;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;   
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;   
+      }
   }
-  &__item:not(:last-child) {
+  &__item {
     margin-right: 8px;
+     @media screen and (max-width: 768px) {
+        margin-bottom: 15px;   
+      }
     }
 }
 .portfolio-card {
   &__list {
     display: flex;
     flex-wrap: wrap;
+     margin-right: -30px;
+     margin-bottom: -30px;
   }
     &__item {
-      display: flex;
       background: var(--body-color);
-      flex-basis: calc((100% - 60px) / 3);
+      max-width: 450px;
       margin-bottom: 30px;
-        &:nth-child(3n - 2) {
-          margin-right: 30px;
-        }
-        &:nth-child(3n - 1) {
-          margin-right: 30px;
-        }
-        &:nth-last-child(-n + 4) {
-          margin-bottom: 0px;
-        }
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-basis: calc((100% - 60px)/2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+        max-width: 354px;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-basis: calc((100% - 90px)/3);
+        margin-right: 30px;
+        margin-bottom: 30px;
+        max-width: 370px;
+       }
+  
     }
     &__link {
       transition: box-shadow 250ms var(--cubic);
@@ -76,7 +104,7 @@
   padding: 63px 24px;
   transform: translateY(100%);
   opacity: 0;
-    .portfolio-card-list__item &__text {
+    &__text {
       @include font (400, 18px, 1.556, 0.03em);
       color: var(--body-color);
     }

@@ -84,6 +84,9 @@
     <svg class="icon">
       <use href="./images/icons.svg#icon-subscribe"></use>
     </svg>
+    <svg class="icon">
+      <use href="./images/icons.svg#icon-menu_open"></use>
+    </svg>
   </template> -->
   <body>
     <header class="header">
@@ -118,10 +121,65 @@
               ><svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/icons/icons.svg#icon-phone"></use>
               </svg>
-              +38 096 111 11 11</a
+              +38(096)111-11-11</a
             >
           </li>
         </ul>
+        <div class="container__button-open">
+          <button class="button-menu-open" type="button">
+            <svg class="button-menu-open__icon">
+              <use href="./images/icons/icons.svg#icon-menu_open"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav is-hidden">
+        <div class="container mobile-nav__container">
+          <button class="button-close-mobile" type="button">
+            <svg class="button-close-mobile__icon">
+              <use href="./images/icons/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link mobile-nav__link--current-page">Студия</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-contacts-social">
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link"> +38(096)111-11-11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social__list">
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -230,12 +288,38 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__item">
-              <img
-                class="oua-team__img"
-                src="./images/desktop_1x/igordemyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop_1x/igordemyanenko.jpg 1x,
+                    ./images/desktop_2x/igordemyanenko.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet_1x/igordemyanenko.jpg 1x,
+                    ./images/tablet_2x/igordemyanenko.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile_1x/igordemyanenko.jpg 1x,
+                    ./images/mobile_2x/igordemyanenko.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="oua-team__img"
+                  src="./images/desktop_1x/igordemyanenko.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
               <div class="our-team__wrapper">
                 <h3 class="our-team__name">Игорь Демьяненко</h3>
                 <p class="our-team__prof">Product Designer</p>
@@ -284,12 +368,44 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop_1x/olgarepina.jpg 1x,
+                    ./images/desktop_2x/olgarepina.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet_1x/olgarepina.jpg 1x,
+                    ./images/tablet_2x/olgarepina.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile_1x/olgarepina.jpg 1x,
+                    ./images/mobile_2x/olgarepina.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="oua-team__img"
+                  src="./images/desktop_1x/olgarepina.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </picture>
+              <!-- <img
                 class="oua-team__img"
                 src="./images/desktop_1x/olgarepina.jpg"
                 alt="Ольга Репина"
                 width="270"
-              />
+              /> -->
               <div class="our-team__wrapper">
                 <h3 class="our-team__name">Ольга Репина</h3>
                 <p class="our-team__prof">Frontend Developer</p>
@@ -338,12 +454,45 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop_1x/nikolaytarasov.jpg 1x,
+                    ./images/desktop_2x/nikolaytarasov.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet_1x/nikolaytarasov.jpg 1x,
+                    ./images/tablet_2x/nikolaytarasov.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile_1x/nikolaytarasov.jpg 1x,
+                    ./images/mobile_2x/nikolaytarasov.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                  sizes="(min-width: 480px)"
+                />
+                <img
+                  class="oua-team__img"
+                  src="./images/desktop_1x/nikolaytarasov.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
+              <!-- <img
                 class="oua-team__img"
                 src="./images/desktop_1x/nikolaytarasov.jpg"
                 alt="Николай Тарасов"
                 width="270"
-              />
+              /> -->
               <div class="our-team__wrapper">
                 <h3 class="our-team__name">Николай Тарасов</h3>
                 <p class="our-team__prof">Marketing</p>
@@ -392,12 +541,45 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop_1x/mikhailermakov.jpg 1x,
+                    ./images/desktop_2x/mikhailermakov.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet_1x/mikhailermakov.jpg 1x,
+                    ./images/tablet_2x/mikhailermakov.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile_1x/mikhailermakov.jpg 1x,
+                    ./images/mobile_2x/mikhailermakov.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                  sizes="(min-width: 480px)"
+                />
+                <img
+                  class="oua-team__img"
+                  src="./images/desktop_1x/mikhailermakov.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
+              <!-- <img
                 class="oua-team__img"
                 src="./images/desktop_1x/mikhailermakov.jpg"
                 alt="Михаил Ермаков"
                 width="270"
-              />
+              /> -->
               <div class="our-team__wrapper">
                 <h3 class="our-team__name">Михаил Ермаков</h3>
                 <p class="our-team__prof">UI Designer</p>
@@ -500,83 +682,85 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer-logo-contacts">
-          <a href="#" class="logo footer__logo logo__studio_color_white"
-            ><span class="logo__first-part">Web</span>Studio</a
-          >
-          <address class="footer-address">
-            <ul class="footer__list">
-              <li class="footer__item">
+        <div class="logo-contacts-social">
+          <div class="footer-logo-contacts">
+            <a href="#" class="logo footer__logo logo__studio_color_white"
+              ><span class="logo__first-part">Web</span>Studio</a
+            >
+            <address class="footer-address">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link aiming-transform"
+                    href="https://goo.gl/maps/GkJHz6BWag29Yt4w9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link aiming-transform footer__link--transparency"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link aiming-transform footer__link--transparency"
+                    href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer-social__title">присоединяйтесь</h3>
+            <ul class="social-icon-list">
+              <li class="social-icon-list__item">
                 <a
-                  class="footer__link aiming-transform"
-                  href="https://goo.gl/maps/GkJHz6BWag29Yt4w9"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                  href=""
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  <svg width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer__item">
+              <li class="social-icon-list__item">
                 <a
-                  class="footer__link aiming-transform footer__link--transparency"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
+                  class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                  href=""
                 >
+                  <svg width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
+              <li class="social-icon-list__item">
                 <a
-                  class="footer__link aiming-transform footer__link--transparency"
-                  href="tel:+380991111111"
-                  >+38 099 111 11 11</a
+                  class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                  href=""
                 >
+                  <svg width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon-list__item">
+                <a
+                  class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                  href=""
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social">
-          <h3 class="footer-social__title">присоединяйтесь</h3>
-          <ul class="social-icon-list">
-            <li class="social-icon-list__item">
-              <a
-                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
-                href=""
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icon-list__item">
-              <a
-                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
-                href=""
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icon-list__item">
-              <a
-                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
-                href=""
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icon-list__item">
-              <a
-                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
-                href=""
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="subscribe-form" action="#">
           <b class="subscribe-form__title">Подпишитесь на рассылку</b>
@@ -671,7 +855,7 @@
                 required
               />
               <span class="contact-form-checkbox__icon aiming-transform"></span>
-              Соглашаюсь с рассылкой и принимаю
+              <p class="contact-form-checkbox__title">Соглашаюсь с рассылкой и принимаю</p>
               <a class="contact-form-checkbox__link-policy-conf" href="#">Условия договора</a>
             </label>
           </div>
@@ -684,5 +868,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

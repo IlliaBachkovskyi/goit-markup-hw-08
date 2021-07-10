@@ -2,25 +2,62 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   background-color: var(--background-color);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/desktop_1x/heroBackground.jpg");
+    @media screen and (min-device-pixel-ratio: 1),
+    (-webkit-min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+        
+          background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url("../images/mobile_1x/heroBackground.jpg");
+    }
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
+           (-webkit-min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+        
+          background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url("../images/tablet_1x/heroBackground.jpg");
+    }
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1200px),
+    (-webkit-min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/desktop_1x/heroBackground.jpg");  
+    }
     &__title {
+      @include font (900, 26px, 1.615, 0.06em);
       align-items: center;
-      @include font (900, 44px, 1.364, 0.06em);
       text-align: center;
       text-transform: uppercase;
+      width: 100%;
       margin: auto auto 30px auto;
-      width: 696px;
       color: var(--body-color);
+        @media screen and (min-width: 480px) {
+          width: 360px;
+        }
+        @media screen and (min-width: 768px) {
+          width: 360px;
+        }
+        @media screen and (min-width: 1200px) {
+           @include font (900, 44px, 1.364, 0.06em);
+           width: 696px;
+        }
     }
 }
