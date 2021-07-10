@@ -11,13 +11,13 @@
   @include font (700, 36px, 1.167, 0.03em);
   text-align: center;
   color: var(--main-text-color);
-  margin-bottom: 50px;
 }
 .about-us {
   &__list {
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
+    margin-top: 50px;
     flex-wrap: wrap;
   }
   &__item {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-06</title>
+    <title>goit-markup-hw-08</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -136,7 +136,7 @@
       <div class="mobile-nav is-hidden">
         <div class="container mobile-nav__container">
           <button class="button-close-mobile" type="button">
-            <svg class="button-close-mobile__icon">
+            <svg class="button-close-mobile__icon" width="40px" height="40px">
               <use href="./images/icons/icons.svg#icon-close-modal"></use>
             </svg>
           </button>
@@ -156,7 +156,12 @@
           <div class="mobile-contacts-social">
             <ul class="mobile-contacts__list">
               <li class="mobile-contacts__item">
-                <a href="tel:+380961111111" class="mobile-contacts__link"> +38(096)111-11-11</a>
+                <a
+                  href="tel:+380961111111"
+                  class="mobile-contacts__link mobile-contacts__link--aiming-color"
+                >
+                  +38(096)111-11-11</a
+                >
               </li>
               <li class="mobile-contacts__item">
                 <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
@@ -253,7 +258,7 @@
             <li class="about-us__item">
               <img
                 class="about-us__img"
-                src="./images/desktop_1x/box1.jpg"
+                src="./images/desktop_1x/box1_D1x.jpg"
                 alt="Десктопные приложения"
                 width="370"
                 height="294"
@@ -263,7 +268,7 @@
             <li class="about-us__item">
               <img
                 class="about-us__img"
-                src="./images/desktop_1x/box2.jpg"
+                src="./images/desktop_1x/box2_D1x.jpg"
                 alt="Мобильные приложения"
                 width="370"
                 height="294"
@@ -273,7 +278,7 @@
             <li class="about-us__item">
               <img
                 class="about-us__img"
-                src="./images/desktop_1x/box3.jpg"
+                src="./images/desktop_1x/box3_D1x.jpg"
                 alt="Дизайнерские решения"
                 width="370"
                 height="294"
@@ -291,33 +296,32 @@
               <picture>
                 <source
                   srcset="
-                    ./images/desktop_1x/igordemyanenko.jpg 1x,
-                    ./images/desktop_2x/igordemyanenko.jpg 2x
+                    ./images/desktop_1x/igordemyanenko_D1x.jpg 1x,
+                    ./images/desktop_2x/igordemyanenko_D2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/tablet_1x/igordemyanenko.jpg 1x,
-                    ./images/tablet_2x/igordemyanenko.jpg 2x
+                    ./images/tablet_1x/igordemyanenko_T1x.jpg 1x,
+                    ./images/tablet_2x/igordemyanenko_T2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/mobile_1x/igordemyanenko.jpg 1x,
-                    ./images/mobile_2x/igordemyanenko.jpg 2x
+                    ./images/mobile_1x/igordemyanenko_M1x.jpg 1x,
+                    ./images/mobile_2x/igordemyanenko_M2x.jpg 2x
                   "
                   media="(min-width: 480px)"
                   type="image/jpeg"
                 />
                 <img
                   class="oua-team__img"
-                  src="./images/desktop_1x/igordemyanenko.jpg"
+                  src="./images/desktop_1x/igordemyanenko_D1x.jpg"
                   alt="Игорь Демьяненко"
-                  width="270"
                 />
               </picture>
               <div class="our-team__wrapper">
@@ -371,33 +375,32 @@
               <picture>
                 <source
                   srcset="
-                    ./images/desktop_1x/olgarepina.jpg 1x,
-                    ./images/desktop_2x/olgarepina.jpg 2x
+                    ./images/desktop_1x/olgarepina_D1x.jpg 1x,
+                    ./images/desktop_2x/olgarepina_Dx.jpg  2x
                   "
                   media="(min-width: 1200px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/tablet_1x/olgarepina.jpg 1x,
-                    ./images/tablet_2x/olgarepina.jpg 2x
+                    ./images/tablet_1x/olgarepina_T1x.jpg 1x,
+                    ./images/tablet_2x/olgarepina_T2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/mobile_1x/olgarepina.jpg 1x,
-                    ./images/mobile_2x/olgarepina.jpg 2x
+                    ./images/mobile_1x/olgarepina_M1x.jpg 1x,
+                    ./images/mobile_2x/olgarepina_M2x.jpg 2x
                   "
                   media="(min-width: 480px)"
                   type="image/jpeg"
                 />
                 <img
                   class="oua-team__img"
-                  src="./images/desktop_1x/olgarepina.jpg"
+                  src="./images/desktop_1x/olgarepina_D1x.jpg"
                   alt="Ольга Репина"
-                  width="270"
                 />
               </picture>
               <!-- <img
@@ -457,24 +460,24 @@
               <picture>
                 <source
                   srcset="
-                    ./images/desktop_1x/nikolaytarasov.jpg 1x,
-                    ./images/desktop_2x/nikolaytarasov.jpg 2x
+                    ./images/desktop_1x/nikolaytarasov_D1x.jpg 1x,
+                    ./images/desktop_2x/nikolaytarasov_D2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/tablet_1x/nikolaytarasov.jpg 1x,
-                    ./images/tablet_2x/nikolaytarasov.jpg 2x
+                    ./images/tablet_1x/nikolaytarasov_T1x.jpg 1x,
+                    ./images/tablet_2x/nikolaytarasov_T2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/mobile_1x/nikolaytarasov.jpg 1x,
-                    ./images/mobile_2x/nikolaytarasov.jpg 2x
+                    ./images/mobile_1x/nikolaytarasov_M1x.jpg 1x,
+                    ./images/mobile_2x/nikolaytarasov_M2x.jpg 2x
                   "
                   media="(min-width: 480px)"
                   type="image/jpeg"
@@ -482,17 +485,10 @@
                 />
                 <img
                   class="oua-team__img"
-                  src="./images/desktop_1x/nikolaytarasov.jpg"
+                  src="./images/desktop_1x/nikolaytarasov_D1x.jpg"
                   alt="Николай Тарасов"
-                  width="270"
                 />
               </picture>
-              <!-- <img
-                class="oua-team__img"
-                src="./images/desktop_1x/nikolaytarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              /> -->
               <div class="our-team__wrapper">
                 <h3 class="our-team__name">Николай Тарасов</h3>
                 <p class="our-team__prof">Marketing</p>
@@ -544,24 +540,24 @@
               <picture>
                 <source
                   srcset="
-                    ./images/desktop_1x/mikhailermakov.jpg 1x,
-                    ./images/desktop_2x/mikhailermakov.jpg 2x
+                    ./images/desktop_1x/mikhailermakov_D1x.jpg 1x,
+                    ./images/desktop_2x/mikhailermakov_D2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/tablet_1x/mikhailermakov.jpg 1x,
-                    ./images/tablet_2x/mikhailermakov.jpg 2x
+                    ./images/tablet_1x/mikhailermakov_T1x.jpg 1x,
+                    ./images/tablet_2x/mikhailermakov_T2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/mobile_1x/mikhailermakov.jpg 1x,
-                    ./images/mobile_2x/mikhailermakov.jpg 2x
+                    ./images/mobile_1x/mikhailermakov_M1x.jpg 1x,
+                    ./images/mobile_2x/mikhailermakov_M2x.jpg 2x
                   "
                   media="(min-width: 480px)"
                   type="image/jpeg"
@@ -569,9 +565,8 @@
                 />
                 <img
                   class="oua-team__img"
-                  src="./images/desktop_1x/mikhailermakov.jpg"
+                  src="./images/tablet_1x/mikhailermakov_D1x.jpg"
                   alt="Михаил Ермаков"
-                  width="270"
                 />
               </picture>
               <!-- <img
@@ -632,7 +627,7 @@
       </section>
       <section class="regular-customers">
         <div class="container">
-          <h2 class="regular-customers__title">Постоянные слиенты</h2>
+          <h2 class="regular-customers__title">Постоянные клиенты</h2>
           <ul class="regular-customers__list">
             <li class="regular-customers__item">
               <a class="regular-customers__icon aiming-transform" href="">

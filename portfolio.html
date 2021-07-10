@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-02</title>
+    <title>goit-markup-hw-08</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -137,13 +137,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/tehnokryak.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/tehnokryak_D1x.jpg 1x,
+                        ./images/desktop_2x/tehnokryak_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/tehnokryak_T1x.jpg 1x,
+                        ./images/tablet_2x/tehnokryak_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/tehnokryak_M1x.jpg 1x,
+                        ./images/mobile_2x/tehnokryak_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/tehnokryak_D1x.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -161,13 +186,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/posterNewOrlean.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/posterNewOrlean_D1x.jpg 1x,
+                        ./images/desktop_2x/posterNewOrlean_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/posterNewOrlean_T1x.jpg 1x,
+                        ./images/tablet_2x/posterNewOrlean_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/posterNewOrlean_M1x.jpg 1x,
+                        ./images/mobile_2x/posterNewOrlean_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/posterNewOrlean_D1x.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>
@@ -181,13 +231,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/seafood.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/seafood_D1x.jpg 1x,
+                        ./images/desktop_2x/seafood_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/seafood_T1x.jpg 1x,
+                        ./images/tablet_2x/seafood_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/seafood_M1x.jpg 1x,
+                        ./images/mobile_2x/seafood_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/seafood_D1x.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>
@@ -201,13 +276,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/projektPrime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/projektPrime_D1x.jpg 1x,
+                        ./images/desktop_2x/projektPrime_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/projektPrime_T1x.jpg 1x,
+                        ./images/tablet_2x/projektPrime_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/projektPrime_M1x.jpg 1x,
+                        ./images/mobile_2x/projektPrime_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/projektPrime_D1x.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>
@@ -221,13 +321,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/projektBoxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/projektBoxes_D1x.jpg 1x,
+                        ./images/desktop_2x/projektBoxes_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/projektBoxes_T1x.jpg 1x,
+                        ./images/tablet_2x/projektBoxes_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/projektBoxes_M1x.jpg 1x,
+                        ./images/mobile_2x/projektBoxes_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/projektBoxes_D1x.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>
@@ -241,13 +366,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/inspiration.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/inspiration_D1x.jpg 1x,
+                        ./images/desktop_2x/inspiration_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/inspiration_T1x.jpg 1x,
+                        ./images/tablet_2x/inspiration_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/inspiration_M1x.jpg 1x,
+                        ./images/mobile_2x/inspiration_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/inspiration_D1x.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>
@@ -261,13 +411,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/limitedEdition.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/limitedEdition_D1x.jpg 1x,
+                        ./images/desktop_2x/limitedEdition_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/limitedEdition_T1x.jpg 1x,
+                        ./images/tablet_2x/limitedEdition_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/limitedEdition_M1x.jpg 1x,
+                        ./images/mobile_2x/limitedEdition_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/limitedEdition_D1x.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>
@@ -281,13 +456,32 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/lab_D1x.jpg 1x,
+                        ./images/desktop_2x/lab_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet_1x/lab_T1x.jpg 1x, ./images/tablet_2x/lab_T2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile_1x/lab_M1x.jpg 1x, ./images/mobile_2x/lab_M2x.jpg 2x"
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/lab_D1x.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>
@@ -301,13 +495,38 @@
             <li class="portfolio-card__item">
               <a class="portfolio-card__link" href="">
                 <div class="portfolio-card__thumb">
-                  <img
-                    class="portfolio-card__img"
-                    src="./images/desktop_1x/growingBusiness.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop_1x/growingBusiness_D1x.jpg 1x,
+                        ./images/desktop_2x/growingBusiness_D2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet_1x/growingBusiness_T1x.jpg 1x,
+                        ./images/tablet_2x/growingBusiness_T2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile_1x/growingBusiness_M1x.jpg 1x,
+                        ./images/mobile_2x/growingBusiness_M2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                      sizes="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card__img"
+                      src="./images/desktop_1x/growingBusiness_D1x.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <div class="portfolio-card-hover-wrapper">
                     <p class="portfolio-card-hover-wrapper__text">.</p>
                   </div>

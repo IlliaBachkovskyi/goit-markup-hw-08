@@ -1,13 +1,11 @@
 .button-close-mobile { 
   @extend %ai-center_jc-center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   box-sizing: border-box;
   border: none;
   background-color: var(--body-color);
     &__icon {
-      width: 18px;
-      height: 18px;
       transition: fill 250ms var(--cubic);
     }
     &:hover &__icon,
@@ -38,11 +36,11 @@
     width: 100vw;
     height: 100vh;
     margin-bottom: auto;
-    z-index: 1;
+    z-index: 10;
     & .button-close-mobile {
       position: absolute;
-      top: 15px;
-      right: 10px;
+      top: 16px;
+      right: 0;
     }
     &__list {
       padding-top: 48px;
@@ -80,6 +78,10 @@
         color: var(--aiming-color);
     } 
   } 
+  &__link--aiming-color {
+    @include font (500, 34px, 1.176, 0.02em);
+    color: var(--aiming-color);
+  }
 }
 
 .mobile-social {
