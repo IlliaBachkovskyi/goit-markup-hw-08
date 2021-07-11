@@ -4,10 +4,12 @@
       display: none;
     }
     @media screen and (min-width: 1200px) {
+      padding-top: 0;
       display: block;
     }
 }
 .about-us__title {
+  margin-bottom: 50px;
   @include font (700, 36px, 1.167, 0.03em);
   text-align: center;
   color: var(--main-text-color);
@@ -16,8 +18,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    padding-left: 0px;
-    margin-top: 50px;
+    padding-left: 0;
     flex-wrap: wrap;
   }
   &__item {

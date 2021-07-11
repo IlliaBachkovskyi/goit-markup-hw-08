@@ -1,24 +1,19 @@
-.portfolio {
-  margin-top: 60px;
-  margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-      margin-top: 94px;
-      margin-bottom: 94px;
-    }
-}
 .portfolio-button {
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-left: -8px;
+    margin-bottom: 40px;
       @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: center;  
+        justify-content: center; 
+        margin-bottom: 30px; 
       }
       @media screen and (min-width: 1200px) {
         display: flex;
-        justify-content: center;  
+        justify-content: center;
+        margin-bottom: 50px;  
       }
   }
   &__item {
@@ -32,13 +27,9 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
-    margin-left: -30px;
+    margin-top: -30px;
       @media screen and (min-width: 768px) {
-        margin-top: 0;   
-      }
-      @media screen and (min-width: 1200px) {
-        margin-top: 20px;   
+        margin-left: -30px;
       }
   }
     &__item {
@@ -54,7 +45,6 @@
       @media screen and (min-width: 1200px) {
         display: flex;
         flex-basis: calc((100% - 90px)/3);
-        margin-left: 30px;
         max-width: 370px;
        }
   
